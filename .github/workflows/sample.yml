@@ -1,0 +1,26 @@
+name: Sample
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+    - name: echo test
+      run: echo "test" 
+  # sample:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - name: checkout
+  #     uses: actions/checkout@v3
+      
+  #   - name: build
+  #     run: docker compose build
+    
+  #   - name: exec docker container exec bash
+  #     run: docker compose exec app date
+    
+  #   - name: exec date
+  #     run: date
